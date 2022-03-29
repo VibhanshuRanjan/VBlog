@@ -1,0 +1,150 @@
+.line{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 9.78vh;
+    background: #F7F8FA;
+}
+.register_sidebar{
+    background: #F7F8FA;
+    width: 49.79vw;
+    height: 100vh;
+    /* // padding: 21vh 8.1vw 19vh 8.26vw; */
+    
+}
+
+.register_sidebar_card{
+    position: absolute;
+    margin-top: 21vh;
+    margin-left: 8.263vw;
+}
+
+.register_sidebar_icon{
+    
+    height: 11.44vh;
+    width: 7.153vw;
+}
+
+.register_sidebar_heading{
+    width: 26.458vw;
+    margin-top: 7.44vh;
+    font-family: DM Sans;
+    font-size: 3.33vw;
+    font-style: normal;
+    font-weight: 700;
+    
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1E272E;
+
+}
+
+.register_sidebar_desc{
+    width: 33.33vw;
+    margin-top: 4.44vh;
+    font-family: DM Sans;
+    font-size: 1.94vw;
+    font-style: normal;
+    font-weight: 500;
+    
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #566474;
+
+}
+
+.register_body{
+    position: absolute;
+    width: 34.583vw;
+    height: 52.9vh;
+    left: 58.056vw;
+    top: 25.11vh;
+    border: 1px solid #DFE0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.register_form{
+    width: 27.78vw;
+    margin-top: 7vh;
+    margin-left: 3.40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.register_form_heading{
+    font-family: DM Sans;
+    font-size: 1.39vw;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 3.33vh;
+
+}
+
+.register_input{
+    margin-bottom: 3.33vh;
+    padding: 1vh;
+    border-radius: 0.4em;
+    border-color: #DFE0E0;
+}
+
+.register_input:focus {
+    outline: none;
+}
+
+.register_login{
+    width: 27.78vw;
+    margin-top: 2vh;
+    margin-left: 3.40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register_login_text{
+    font-family: DM Sans;
+    font-size: 1.11vw;
+    font-style: normal;
+    font-weight: 500;
+    
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #566474;
+    margin-right: -6vw;
+
+}
+
+.btn_large{
+    width: 27.78vw;
+    height: 4.89vh;
+    
+}
+
+.btn_small{
+    width: 5.7vw;
+    height: 4vh;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9vh 1.11vw;
+    border-radius: 0.6vh;
+    color: white;
+    font-size: 1vw;
+    border-style: none;
+    background-color: #0161c7;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+
+

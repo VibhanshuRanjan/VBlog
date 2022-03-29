@@ -1,0 +1,21 @@
+.all_blogs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+    min-height: 100vh;
+}
+
+.all_blogs_body{
+    flex: 9;
+}
+
+.all_blogs_sidebar{
+    flex: 2;
+    margin-right: 2vw;
+}
+
+.all_blogs_blog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

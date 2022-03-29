@@ -1,0 +1,116 @@
+.blogCard{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #d8cfcf; */
+}
+
+.b_line{
+    height: 1px;
+    background: #dfdfe0;
+    margin-left: 4vw;
+}
+
+.blogCard_info {
+    max-width: 60vw;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+}
+
+
+ .img_card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.blog_img {
+    width: 170px;
+    height: 120px;
+   
+} 
+
+.blog_img:hover{
+    width: 190px;
+    height: 140px;
+}
+
+
+.blog_info {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_categories{
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.category_btn{
+    
+    font-family: "Varela", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 100px;
+    margin-right:2vw;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(41, 41, 41, 1);
+    white-space: nowrap;
+    line-height: 19px;
+    cursor: pointer;
+    border:none
+}
+.category_btn:hover{
+    background-color:rgb(184, 178, 178);
+}
+
+
+  
+.blog_title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: rgb(95, 94, 94);
+    cursor: pointer;
+   
+}
+
+.blog_title:hover{
+    color:black;
+}
+  
+.blog_date {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 15px;
+    
+}
+  
+.blog_desc {
+    font-family: "Varela", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

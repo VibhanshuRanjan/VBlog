@@ -1,0 +1,151 @@
+.blogPage{
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: rgba(246, 252, 255, 1);
+  
+}
+.single_blog {
+  width: 40vw;  
+  padding-left: 20vw;
+  
+}
+
+.line_shadow{
+  height: 1px;
+  width: 100;
+  background:rgb(206, 202, 202);
+  /* padding-top: 9.78vh; */
+}
+
+.author{
+  display:flex;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.author_info {
+  margin-left: 2vw;
+}
+
+.author_name{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+.publish_date{
+  color: rgb(170, 109, 109);
+  font-family: DM Sans;
+}
+
+  
+.post_image {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.blog_title_input{
+  margin: 10px;
+  width: 60vw;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+
+.blog_title_input:focus{
+  outline: none;
+}
+
+.post_title {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: DM Sans;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog_update {
+  float: right;
+  font-size: 16px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.blog_icon_up {
+  color:teal;
+  cursor: pointer;
+}
+
+.blog_icon_up:hover {
+  color: black;
+  font-size: 25px;
+}
+
+
+.blog_icon_del{
+  color: tomato;
+  cursor: pointer;
+}
+
+.blog_icon_del:hover{
+  color: black;
+  font-size: 25px;
+}
+
+
+.post_desc {
+  color: rgba(57, 63, 65, 1);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.update_label{
+  margin-bottom: 1vh;
+  color:gray
+}
+
+.blog_desc_input {
+  border: none;
+  width: 60vw;
+  color: #666;
+  height: 20vh;
+  font-size: 18px;
+  line-height: 25px;
+  
+}
+.blog_desc{
+  padding-bottom: 4vh;
+}
+
+.blog_desc_input:focus {
+  outline: none;
+}
+
+.update_btn {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-bottom: 4vh;
+}
+
+.update_btn:hover{
+  color:black;
+}

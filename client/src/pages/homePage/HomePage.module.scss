@@ -1,0 +1,127 @@
+.header{
+    z-index: 90;
+    padding-top:5vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a6a99;
+    height: 35vh;
+    width: 100%;
+}
+
+.l_heading{
+    color: white;
+    font-size: 50px;
+}
+
+.s_heading{
+    font-size: 20px;
+    font-family: DM Sans;
+    color: white;
+}
+
+
+.nofill{
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(75, 72, 72);
+}
+
+
+
+.header_btn{
+   
+    background-color: transparent;
+    /* border-style: none; */
+    border-radius: 0.6vh;
+    padding: 0.9vh 1.11vw;
+    color: white;
+    border-color: black;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.header_btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.home_body{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20 20 20px;
+}
+
+.all_blog{
+    background-color: #128C7E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_blog_title{
+    margin-top: 8vh;
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size:xx-large;
+}
+
+.all_blog_desc{
+    color: white;
+    margin-top:6vh;
+    width: 30vw;
+    font-family: 'Open Sans',sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.all_blog_btn{
+   
+    background-color: transparent;
+    border-radius: 0.6vh;
+    border-color: black;
+    padding: 0.9vh 1.11vw;
+    color: white;
+    height: 4.89vh;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    cursor: pointer;
+}
+
+.all_blog_btn:hover{
+    color:black;
+}
+
+.p_blog_title{
+    margin-top: 4vh;
+    font-family: 'Open Sans',sans-serif;
+    font-size:xx-large;
+    text-align: center;
+    color: rgb(46, 45, 45);
+
+}
+
+.p_blog_desc{
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    font-family: 'Open Sans',sans-serif;
+    font-size:large;
+    text-align: center;
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    color:#7d8285;
+
+}
+
+.pblogs{
+    
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+     
+}
