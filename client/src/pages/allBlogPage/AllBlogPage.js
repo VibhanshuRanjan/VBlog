@@ -8,7 +8,8 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import { useLocation } from "react-router";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import style from './AllBlogPage.module.scss'
+import style from './AllBlogPage.module.scss';
+import { BASE_API_URL } from '../../utils/constants';
 
 const AllBlogPage = () => {
     const [blogs, setBlogs] = useState([]);
@@ -18,7 +19,7 @@ const AllBlogPage = () => {
 useEffect(() => {
     const fetchallBlogs = async () => {
         // console.log("Adkls");
-        const res = await axios.get("http://localhost:5000/api/blogs/"+search);
+        const res = await axios.get(`${BASE_API_URL}/api/blogs/`+search);
         console.log(search);
         setBlogs(res.data);
     };

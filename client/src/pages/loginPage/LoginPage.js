@@ -5,7 +5,8 @@ import Navbar from '../../components/navbar/Navbar';
 import swal from "sweetalert2";
 import { AuthContext } from "../../helper/authContext";
 // import Button from '../../components/button/Button';
-import style from './LoginPage.module.scss'
+import style from './LoginPage.module.scss';
+import { BASE_API_URL } from '../../utils/constants';
 
 const LoginPage = () => {
     
@@ -29,7 +30,7 @@ const LoginPage = () => {
            e.preventDefault();
            const {email,password} = user
            if(email && password){
-                const res = await axios.post("http://localhost:5000/api/auth/login",user)
+                const res = await axios.post(`${BASE_API_URL}/api/auth/login`,user)
                 if(res.data.message==="Email not"){
                     swal.fire({title: "Email not registered",
                     icon: "warning",

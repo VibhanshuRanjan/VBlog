@@ -5,7 +5,8 @@ import axios from "axios";
 // import Button from '../../components/button/Button';
 // import Navbar from '../../components/navbar/Navbar';
 import swal from "sweetalert";
-import style from './RegisterPage.module.scss'
+import style from './RegisterPage.module.scss';
+import { BASE_API_URL } from '../../utils/constants';
 
 const RegisterPage = () => {
   const [user,setUser] = useState({
@@ -30,7 +31,7 @@ const RegisterPage = () => {
     if(username && email && password)
     {
       
-        const res = await axios.post("http://localhost:5000/api/auth/register",user);
+        const res = await axios.post(`${BASE_API_URL}/api/auth/register`,user);
         if(res.data.message==="Password too small")
           swal({title: "Password length should be atleast 6",
           icon: "warning",

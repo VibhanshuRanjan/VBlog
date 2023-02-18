@@ -7,6 +7,7 @@ import UploadFileIcon from '@mui/icons-material/UploadFile';
 import DeleteIcon from '@mui/icons-material/Delete';
 import style from './BlogPage.module.scss'
 import Navbar from "../../components/navbar/Navbar";
+import { BASE_API_URL } from '../../utils/constants';
 const BlogPage = () => {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
@@ -19,7 +20,7 @@ const BlogPage = () => {
 
     const handleDelete = async () => {
         try {
-          await axios.delete(`http://localhost:5000/api/blogs/${blog._id}`, {
+          await axios.delete(`${BASE_API_URL}/api/blogs/${blog._id}`, {
             data: { username: user },
           });
           window.location.replace("/");
@@ -28,7 +29,7 @@ const BlogPage = () => {
     
     const handleUpdate = async () => {
     try {
-        await axios.put(`http://localhost:5000/api/blogs/${blog._id}`, {
+        await axios.put(`${BASE_API_URL}/api/blogs/${blog._id}`, {
         username: user,
         title,
         desc,
@@ -39,7 +40,7 @@ const BlogPage = () => {
 
     useEffect(() => {
         const getBlog = async () => {
-          const res = await axios.get("http://localhost:5000/api/blogs/" + path);
+          const res = await axios.get(`${BASE_API_URL}/api/blogs/` + path);
           setBlog(res.data);
           setTitle(res.data.title);
           setDesc(res.data.desc);
@@ -48,7 +49,7 @@ const BlogPage = () => {
         };
         getBlog();
       }, [path]);
-    const PF = "http://localhost:5000/images/"
+    const PF = `${BASE_API_URL}/images/`
     return (
         <div className={style.blogPage}>
             <Navbar />

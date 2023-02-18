@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 import Footer from "../../components/footer/Footer";
 import SBlogCard from "../../components/sBlogCard/SBlogCard";
 import Social from "../../components/social/Social";
+import { BASE_API_URL } from '../../utils/constants';
+
 const HomePage = () => {
   const [blogs_q, setBlogs_q] = useState([]);
   const [blogs, setBlogs] = useState([]);
@@ -22,12 +24,12 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       // console.log("ADsd");
-      const res1 = await axios.get("http://localhost:5000/api/blogs/"+search);
-      console.log(search);
+      const res1= await axios.get(`${BASE_API_URL}/api/blogs/`+search);
+      console.log("Search is here in homepage :",search);
       setBlogs_q(res1.data);
       console.log(res1);
 
-      const res2 = await axios.get("http://localhost:5000/api/blogs/");
+      const res2 = await axios.get(`${BASE_API_URL}/api/blogs/`);
       // setBlogs(res2.data);
       const res3 = res2.data.reverse();
       setPblogs(res3);

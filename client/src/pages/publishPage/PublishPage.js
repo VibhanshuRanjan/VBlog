@@ -4,6 +4,7 @@ import style from './PublishPage.module.scss'
 import Navbar from '../../components/navbar/Navbar';
 import axios from 'axios';
 import { AuthContext } from "../../helper/authContext";
+import { BASE_API_URL } from '../../utils/constants';
 
 
 const PublishPage = () => {
@@ -48,14 +49,14 @@ const PublishPage = () => {
             data.append("file", selectedImage);
             newPost.photo = filename;
             try {
-              const res = await axios.post("http://localhost:5000/api/upload", data);
+              const res = await axios.post(`${BASE_API_URL}/api/upload`, data);
               console.log(res);
             } catch (err) {}
           }
           try {
 
 
-            const cats = await axios.get("http://localhost:5000/api/categories/");
+            const cats = await axios.get(`${BASE_API_URL}/api/categories/`);
                 // console.log(cats);
                 
                 categories.map((c)=>{
@@ -67,7 +68,7 @@ const PublishPage = () => {
                   if(!present)
                   {
                     // console.log("efg");
-                    axios.post("http://localhost:5000/api/categories/",{name:c})
+                    axios.post(`${BASE_API_URL}/api/categories/`,{name:c})
                     .then((res)=>{
                       console.log(res);
                     });
@@ -75,7 +76,7 @@ const PublishPage = () => {
                   }
                 })
                 
-                const res = await axios.post("http://localhost:5000/api/blogs", newPost);
+                const res = await axios.post(`${BASE_API_URL}/api/blogs`, newPost);
                 console.log(res.data);
                 window.location.replace("/blog/" + res.data._id);
             } catch (err) {
