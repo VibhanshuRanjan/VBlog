@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import { BASE_API_URL } from '../../utils/constants';
 
 
 const Sidebar = () => {
@@ -10,7 +11,7 @@ const Sidebar = () => {
   const [cats,setCats] = useState([]);
   useEffect(()=>{
     const fetchCats = async ()=>{
-        const res = await axios.get("http://localhost:5000/api/categories/");
+        const res = await axios.get(`${BASE_API_URL}/api/categories/`);
         // console.log(res.data);
         setCats(res.data);
         

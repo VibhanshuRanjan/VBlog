@@ -1,9 +1,10 @@
 import React from 'react';
 import style from './BlogCard.module.scss';
 import { Link } from "react-router-dom";
+import { BASE_API_URL } from '../../utils/constants';
 
 const BlogCard = ({blog}) => {
-  const PF = "http://localhost:5000/images/"
+  const PF = `${BASE_API_URL}/images/`
   return (
       <div className={style.blogCard}>
             <div className={style.b_line}></div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import style from "./SBlogCard.module.scss";
 import { Link } from "react-router-dom";
+import { BASE_API_URL } from '../../utils/constants';
 
 const SBlogCard = ({blog}) => {
   const url = window.location.pathname;
-  const PF = "http://localhost:5000/images/";
+  const PF = `${BASE_API_URL}/images/`;
   return (
     <div className={style.sblogCard}>
         <Link to={`/blog/${blog._id}`} className="link">
