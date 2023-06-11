@@ -6,6 +6,10 @@ A platform where users can post different articles and images of their interest.
 ### Try this app - https://vblog-blogger.onrender.com/
 ![VBlog](https://github.com/VibhanshuRanjan/VBlog/assets/68275801/993d3f7b-72bd-48b8-afba-2871ee5541a3)
 
+## Requirements
+* Node.js and npm (Node Package Manager). [Download Link](https://nodejs.org/en/download)
+* MongoDB for the database. [Download Link](https://www.mongodb.com/)
+* POSTMAN helpful in testing APIs. [Download Link](https://www.postman.com/downloads/)
 
 
 ## Contributing
