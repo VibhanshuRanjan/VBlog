@@ -1,5 +1,6 @@
 # VBlog
 A blogging website created with MERN stack.<br>
+<br>
 A platform where users can post different articles and images of their interest. Allow users to update or delete their old blogs. Users can filter blogs based on different topic of interests.
 
 ### Try this app - https://vblog-blogger.onrender.com/
