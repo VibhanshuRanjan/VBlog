@@ -11,6 +11,12 @@ A platform where users can post different articles and images of their interest.
 * MongoDB for the database. [Download Link](https://www.mongodb.com/)
 * POSTMAN helpful in testing APIs. [Download Link](https://www.postman.com/downloads/)
 
+## Features
+* The website is provided with registration and login authentication.
+* Users can post text as well as images.
+* They can filter the posted articles/blogs based on different categories like music,tech,lifestyle,food etc.
+* Can delete or update their own old articles/blogs.
+* Appealing and easy to use User Interface!!
 
 ## Contributing
 
